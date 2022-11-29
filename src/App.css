@@ -1,0 +1,43 @@
+
+/*.book-create{*/
+/*    position: fixed;*/
+/*    padding: 0 0 60px 20px;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+
+body{
+    background-image: url("./Images/background.gif");
+    font-family: "Fira Code Light", serif;
+}
+
+.waviy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 3s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg)
+    }
+}
+
+.book-create{
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: white;
+    padding: 15px;
+}
