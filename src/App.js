@@ -18,7 +18,7 @@ function App() {
         if (searchTerm === '') {
             settingBookTitle();
         }
-    }, [searchTerm]);
+    }, [searchTerm,settingBookTitle]);
 
     useEffect(() => {
         stableFetchBooksList();
